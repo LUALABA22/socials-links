@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/LUALABA22/socials-links.git
+- Live Site URL: https://lualaba22.github.io/socials-links/
 
 ## My process
 
