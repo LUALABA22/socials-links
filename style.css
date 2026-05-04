@@ -48,6 +48,9 @@ h4{
 p{
     line-height: 1.5;
     color: hsl(0, 1%, 60%);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card a{
