@@ -1,0 +1,70 @@
+html{
+    box-sizing: border-box;
+}
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+}
+
+/* Card */
+.card{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 12%);
+    width: 100%;
+    max-width: 350px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.7rem;
+}
+
+img{
+    border-radius: 6rem;
+    width: 100%;
+    max-width: 120px;
+}
+
+h3{
+    color: hsl(0, 0%, 100%);
+}
+
+h4{
+    line-height: 0;
+    margin-top: 0;
+    color: hsl(75, 94%, 57%);
+    font-weight: 800;
+}
+
+p{
+    line-height: 0;
+    color: hsl(0, 3%, 64%);
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    background-color: hsl(0, 0%, 20%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card a:focus, .card a:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    outline: 2px solid black;
+}
