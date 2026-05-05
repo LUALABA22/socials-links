@@ -6,13 +6,17 @@ html{
 }
 body{
     margin: 0;
-    padding: 30px;
+    padding: clamp(1rem, 5vw, 2.75rem);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: hsl(0, 0%, 8%);
+    background-color: var(--bg-color);
+}
+
+:root{
+    --bg-color:hsl(0, 0%, 8%)
 }
 
 /* Card */
@@ -22,21 +26,22 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: hsl(0, 0%, 12%);
-    width: 100%;
-    max-width: 350px;
-    padding: 2rem;
+    width: 90%;
+    max-width: 375px;
+    padding: clamp(0.9rem, 5vw, 2rem);
     text-align: center;
     border-radius: 0.7rem;
 }
 
 img{
-    border-radius: 6rem;
+    border-radius: 7rem;
     width: 100%;
     max-width: 120px;
 }
 
-h3{
+h1{
     color: hsl(0, 0%, 100%);
+    font-size: 20px;
 }
 
 h4{
@@ -46,19 +51,20 @@ h4{
 }
 
 p{
-    line-height: 1.5;
     color: hsl(0, 1%, 60%);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 14px;
+    margin-top: 0;
 }
 
 .card a{
     text-decoration: none;
-    color: black;
-    margin: 10px;
+    color: var(--bg-color);
+    margin: 0.4rem;
     background-color: hsl(0, 0%, 20%);
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     width: 100%;
     color: hsl(0, 0%, 100%);
@@ -67,6 +73,12 @@ p{
 }
 .card a:focus, .card a:hover{
     background-color: hsl(75, 94%, 57%);
-    color: black;
-    outline: 2px solid black;
+    color: var(--bg-color);
+    outline: 2px solid var(--bg-color);
+}
+
+@media (prefers-reduced-motion: reduce){
+    .card a:focus, .card a:hover{
+        transition: none;
+    }
 }
